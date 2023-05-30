@@ -1,0 +1,38 @@
+{
+  "name": "electron-custom-devtools",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "a tools allow you use custom devtools frontend in electron",
+  "main": "dist/index.js",
+  "repository": "https://github.com/MrHuangJser/electron-custom-devtools",
+  "author": "mrhuangjser <mrhuangjser@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w"
+  },
+  "files": [
+    "dist",
+    "src",
+    "chrome-extension-manifest-schema.json",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.2.5",
+    "electron": "^24.0.0",
+    "rollup": "^3.23.0",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "electron": "^20.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "json-schema-to-ts": "^2.9.1",
+    "nanoid": "^4.0.2"
+  }
+}
